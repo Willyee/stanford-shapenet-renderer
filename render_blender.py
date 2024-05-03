@@ -224,9 +224,9 @@ for i in range(0, args.views):
     render_file_path = fp + '_r_{0:03d}'.format(int(i * stepsize))
 
     scene.render.filepath = render_file_path
-    depth_file_output.file_slots[0].path = render_file_path + "_depth"
-    normal_file_output.file_slots[0].path = render_file_path + "_normal"
-    albedo_file_output.file_slots[0].path = render_file_path + "_albedo"
+#    depth_file_output.file_slots[0].path = render_file_path + "_depth"
+#    normal_file_output.file_slots[0].path = render_file_path + "_normal"
+#    albedo_file_output.file_slots[0].path = render_file_path + "_albedo"
     id_file_output.file_slots[0].path = render_file_path + "_id"
 
     bpy.ops.render.render(write_still=True)  # render still
